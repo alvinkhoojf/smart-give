@@ -66,7 +66,7 @@ export default function NewsDetail() {
   return (
     <div>
       <Navbar />
-      <div className={styles.detailContainer}>
+      <div style={{ backgroundColor: "#f8f8f8", paddingBottom: "200px" }}>
         <div className={styles.bannerWrapper}>
           <img src={image} alt={article.title} className={styles.coverImg} />
           <div className={styles.overlayText}>
@@ -77,8 +77,8 @@ export default function NewsDetail() {
           <div className={styles.date}>
             Posted: {new Date(article.created_at).toLocaleDateString()}
           </div>
-          <div className="row">
-            <div className="col-md-8">
+          <div className="row gap-5">
+            <div className="col-md-7">
               <h1 className={styles.newsTitle}>{article.title}</h1>
               <div className={styles.imgWrapper}>
                 <img src={image} className={styles.newsImg} />

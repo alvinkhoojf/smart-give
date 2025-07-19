@@ -15,7 +15,7 @@ export default function AdminDashboard() {
   ];
 
   return (
-    <div style={{ background: "#f7f9fb", minHeight: "100vh" }}>
+    <div style={{ background: "#f7f9fb", minHeight: "130vh" }}>
       {/* NAVBAR */}
       <nav
         style={{
@@ -99,13 +99,13 @@ export default function AdminDashboard() {
           ))}
         </div>
 
-        {/* Tab Content Placeholder */}
         <div>
           {activeTab === "accounts" && <PendingAccountsTab />}
           {activeTab === "campaigns" && <PendingCampaignsTab />}
           {activeTab === "news" && <NewsArticleTab />}
         </div>
       </div>
+
     </div>
   );
 }

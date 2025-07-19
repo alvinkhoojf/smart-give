@@ -230,7 +230,7 @@ const AdminCampaignDetails = () => {
     if (campaignType === 1 && milestones.length > 0) {
       // Milestone
       return (
-         <div style={{ padding: 20 }}>
+         <div style={{ padding: 20, marginBottom: 200 }}>
           <Title level={4} style={{ marginBottom: 16 }}>
             Milestones
           </Title>

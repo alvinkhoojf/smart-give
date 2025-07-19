@@ -230,7 +230,7 @@ const Profile = () => {
   return (
     <div>
       <Navbar />
-      <div className="container pt-5">
+      <div className="container pt-5" style={{ minHeight: "100vh" }}>
         {isProfileIncomplete && (
           <div>
 

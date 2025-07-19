@@ -9,7 +9,7 @@ export default function About() {
     <div>
       <Navbar />
 
-      <div>
+      <div style={{ marginBottom: "200px" }}>
         <div className={styles.banner}>
           <img src="/images/about-banner.webp" alt="" />
           <h1 className={styles.title}>About Us</h1>

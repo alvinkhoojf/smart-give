@@ -28,7 +28,7 @@ export default function CampaignList() {
   return (
     <div>
       <Navbar />
-      <div style={{backgroundColor: '#f8f8f8', paddingTop: '60px'}}>
+      <div style={{backgroundColor: '#f8f8f8', paddingTop: '60px',  paddingBottom: '200px'}}>
         <div className="container">
           <div className={`row ${styles.header}`}>
             <div className={`col-md-7 ${styles.headerLeft}`}>

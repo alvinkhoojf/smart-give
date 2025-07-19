@@ -130,95 +130,99 @@ const Donation = () => {
   const raisedMYR = exchangeRate ? (totalRaised * exchangeRate).toFixed(2) : "-";
 
   return (
-    <div style={{ backgroundColor: "#f8f8f8", minHeight: "100vh" }}>
+    <div>
       <Navbar />
-      <div className="container mt-5 mb-5">
-        <div className="row g-5">
-          <div className="col-md-6">
-            <div className="position-relative">
-              {/* Blurred donation box if not logged in */}
-              <div
-                className={styles.donationBox}
-                style={{
-                  filter: !user ? "blur(4px)" : "none",
-                  pointerEvents: !user ? "none" : "auto",
-                  transition: "filter 0.3s ease"
-                }}
-              >
-                <h4 className="mb-4">How much do you want to donate?</h4>
-                <div className="mb-4">
-                  <label className="form-label">Amount (in MYR)</label>
-                  <input
-                    type="number"
-                    className="form-control"
-                    placeholder="e.g. 100"
-                    value={amountMYR}
-                    onChange={(e) => setAmountMYR(e.target.value)}
+      <div style={{ backgroundColor: "#f8f8f8", minHeight: "100vh" }}>
+        <div className="container mt-5 mb-5">
+          <div className="row g-5">
+            <div className="col-md-6">
+              <div className="position-relative">
+                {/* Blurred donation box if not logged in */}
+                <div
+                  className={styles.donationBox}
+                  style={{
+                    filter: !user ? "blur(4px)" : "none",
+                    pointerEvents: !user ? "none" : "auto",
+                    transition: "filter 0.3s ease"
+                  }}
+                >
+                  <h4 className="mb-4">How much do you want to donate?</h4>
+                  <div className="mb-4">
+                    <label className="form-label">Amount (in MYR)</label>
+                    <input
+                      type="number"
+                      className="form-control"
+                      placeholder="e.g. 100"
+                      value={amountMYR}
+                      onChange={(e) => setAmountMYR(e.target.value)}
+                    />
+                    <div className="text-muted mt-2">
+                      {exchangeRate && amountMYR && <div>≈ {ethEquivalent} ETH</div>}
+                    </div>
+                  </div>
+
+                  <div className="mb-4 d-flex align-items-center gap-2">
+                    <Switch
+                      checked={anonymous}
+                      onChange={setAnonymous}
+                      style={{ backgroundColor: anonymous ? "#FF416C" : "#d9d9d9" }}
+                    />
+                    <label className="form-label mb-0">Make my donation anonymous</label>
+                  </div>
+
+                  <button className={styles.donateBtn} onClick={handleDonate}>
+                    Donate
+                  </button>
+                </div>
+
+                {/* Sign In Overlay */}
+                {!user && (
+                  <div
+                    className="position-absolute top-50 start-50 translate-middle"
+                    style={{ zIndex: 10 }}
+                  >
+                    <Link to="/role" className={styles.signInButton}>
+                      Sign In to Donate
+                    </Link>
+                  </div>
+                )}
+              </div>
+            </div>
+
+
+            {/* RIGHT: Campaign Details */}
+            <div className="col-md-6">
+              <div className={styles.infoCard}>
+                {firstImage && (
+                  <img
+                    src={firstImage.startsWith("http") ? firstImage : "http://localhost:5000" + firstImage}
+                    className="img-fluid rounded mb-3"
+                    style={{ height: 250, objectFit: "cover", width: "100%" }}
+                    alt="Campaign"
                   />
-                  <div className="text-muted mt-2">
-                    {exchangeRate && amountMYR && <div>≈ {ethEquivalent} ETH</div>}
+                )}
+                <h4>{campaign.title}</h4>
+                <p className={styles.ngo}>{campaign.ngo_username}</p>
+                <div className="mb-2">
+                  <div className={styles.verified}>
+                    <img className={styles.shieldIcon} src="/images/shield.png" alt="Verified" /> Verified
                   </div>
                 </div>
+                <div dangerouslySetInnerHTML={{ __html: campaign.description?.slice(0, 200) + '...' }} />
 
-                <div className="mb-4 d-flex align-items-center gap-2">
-                  <Switch
-                    checked={anonymous}
-                    onChange={setAnonymous}
-                    style={{ backgroundColor: anonymous ? "#FF416C" : "#d9d9d9" }}
-                  />
-                  <label className="form-label mb-0">Make my donation anonymous</label>
+                <div className="alert alert-light mt-3 d-flex justify-content-between">
+                  <strong>Total Amount Raised:</strong>
+                  <span className={styles.raisedAmount}>RM {raisedMYR}</span>
                 </div>
-
-                <button className={styles.donateBtn} onClick={handleDonate}>
-                  Donate
-                </button>
-              </div>
-
-              {/* Sign In Overlay */}
-              {!user && (
-                <div
-                  className="position-absolute top-50 start-50 translate-middle"
-                  style={{ zIndex: 10 }}
-                >
-                  <Link to="/role" className={styles.signInButton}>
-                    Sign In to Donate
-                  </Link>
-                </div>
-              )}
-            </div>
-          </div>
-
-
-          {/* RIGHT: Campaign Details */}
-          <div className="col-md-6">
-            <div className={styles.infoCard}>
-              {firstImage && (
-                <img
-                  src={firstImage.startsWith("http") ? firstImage : "http://localhost:5000" + firstImage}
-                  className="img-fluid rounded mb-3"
-                  style={{ height: 250, objectFit: "cover", width: "100%" }}
-                  alt="Campaign"
-                />
-              )}
-              <h4>{campaign.title}</h4>
-              <p className={styles.ngo}>{campaign.ngo_username}</p>
-              <div className="mb-2">
-                <div className={styles.verified}>
-                  <img className={styles.shieldIcon} src="/images/shield.png" alt="Verified" /> Verified
-                </div>
-              </div>
-              <div dangerouslySetInnerHTML={{ __html: campaign.description?.slice(0, 200) + '...' }} />
-
-              <div className="alert alert-light mt-3 d-flex justify-content-between">
-                <strong>Total Amount Raised:</strong>
-                <span className={styles.raisedAmount}>RM {raisedMYR}</span>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
+    
   );
 };
 

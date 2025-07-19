@@ -446,7 +446,7 @@ export default function CreateCampaign() {
   return (
     <div>
       <Navbar />
-      <div style={{ backgroundColor: "#f8f8f8", minHeight: "100vh", padding: "40px 0" }}>
+      <div style={{ backgroundColor: "#f8f8f8", minHeight: "100vh", paddingTop: '40px', paddingBottom: '200px' }}>
         <div className="container" style={{ marginBottom: 50 }}>
           <h1 className={styles.title}>Create a Campaign</h1>
         </div>

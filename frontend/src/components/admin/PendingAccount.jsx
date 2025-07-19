@@ -59,7 +59,7 @@ export default function PendingAccountsTab() {
     <div>
       {loading && <div>Loading NGOs...</div>}
       {!loading && pendingNgos.length === 0 && (
-        <div style={{ color: "#aaa" }}>No NGOs pending verification.</div>
+        <div style={{ color: "#aaa", minHeight: "51.7vh" }}>No NGOs pending verification.</div>
       )}
       <div style={{ display: "flex", flexWrap: "wrap", gap: 24 }}>
         {!loading && pendingNgos.map(ngo => (

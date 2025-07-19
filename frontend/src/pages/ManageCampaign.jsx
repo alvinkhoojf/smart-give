@@ -383,7 +383,7 @@ const ManageCampaign = () => {
   return (
     <div>
       <Navbar />
-      <div style={{ backgroundColor: '#f8f8f8', minHeight: '100vh', paddingTop: '60px' }}>
+      <div style={{ backgroundColor: '#f8f8f8', minHeight: '100vh', paddingTop: '60px', paddingBottom: '200px' }}>
         <div className="container">
           <div className={styles.campaignHeader}>
             <h1 className={styles.campaignTitle}>{campaign.title}</h1>

@@ -28,7 +28,6 @@ export default function HomePage() {
     <div>
       <Navbar />
 
-      {/* HERO SECTION */}
       <section>
         <div className="container">
           <div className="row" style={{ margin: '30px 0' }}>
@@ -54,8 +53,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FEATURE BAR */}
-      <section style={{ margin: '30px 0' }}>
+      <section>
         <div style={{ backgroundColor: '#fff4cc', color: '#684c14', textAlign: 'center', padding: '15px 0' }}>
           <span style={{ fontSize: '16px', margin: '0 10px', fontWeight: 'bold' }}>All campaigns are verified</span>
           <span style={{ fontSize: '16px', margin: '0 10px' }}>--------</span>
@@ -65,7 +63,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* LATEST CAMPAIGNS */}
       <section style={{ background: '#f8f8f8', padding: '50px 0' }}>
         <div className="container">
           <div className="d-flex justify-content-between align-items-end mb-4">
@@ -81,8 +78,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* LATEST NEWS */}
-      <section style={{ background: '#fff', padding: '50px 0 70px 0' }}>
+      <section style={{ background: '#fff', paddingTop: '50px', paddingBottom: '200px' }}>
         <div className="container">
           <div className="d-flex justify-content-between align-items-end mb-4">
             <h2 style={{ fontWeight: 800, fontSize: '2rem' }}>Latest News</h2>

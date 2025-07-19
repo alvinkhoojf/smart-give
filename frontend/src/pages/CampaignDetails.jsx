@@ -380,7 +380,7 @@ const CampaignDetail = () => {
   return (
     <div>
       <Navbar />
-      <div style={{ backgroundColor: '#f8f8f8', minHeight: '100vh', paddingTop: '60px' }}>
+      <div style={{ backgroundColor: '#f8f8f8', minHeight: '100vh', paddingTop: '60px', paddingBottom: '200px' }}>
         <div className="container">
           {/* Header section */}
           <div className={styles.campaignHeader}>

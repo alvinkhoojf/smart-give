@@ -31,7 +31,7 @@ export default function PendingCampaignsTab() {
     <div>
       {loading && <div>Loading campaigns...</div>}
       {!loading && pendingCampaigns.length === 0 && (
-        <div style={{ color: "#aaa" }}>No campaigns pending verification.</div>
+        <div style={{ color: "#aaa", minHeight: "51.7vh" }}>No campaigns pending verification.</div>
       )}
       <div
         style={{
