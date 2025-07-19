@@ -1,0 +1,22 @@
+.header {
+  padding-bottom: 40px;
+  text-align: center;
+}
+.title {
+  font-size: 44px;
+  margin-bottom: 12px;
+}
+.subTitle {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.articlesSection {
+  padding-top: 60px;
+  border-top: 1px solid #ececec;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: flex-start;
+}

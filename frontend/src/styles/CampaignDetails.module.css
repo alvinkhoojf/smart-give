@@ -1,0 +1,188 @@
+.campaignHeader {
+  margin-bottom: 30px;
+} 
+
+.campaignTitle {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.verified {
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: #FF416C;
+  color: white;
+  gap: 5px;
+  border-radius: 50px;
+  padding: 6px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  align-items: center;
+}
+
+.shieldIcon {
+  width: 16px;
+  height: 16px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.campaignDetails {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  height: 100%;
+}
+
+.raisedText {
+  display: inline-block;
+  font-size: 12px;
+  background-color: #f7f7f9;
+  color: grey;
+  padding: 2px 4px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.raisedAmount {
+  display: block;     
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+}
+
+.goal {
+  display: block;
+  font-size: 14px;
+  color: grey;
+}
+
+.ngo {
+  font-weight: 600;
+  color: #FF416C;
+}
+
+.addressTitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.address {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f7f9;
+  padding: 4px 8px;
+  color: grey;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.infoBtn {
+  width: 20px;
+  cursor: pointer;
+}
+
+.donateBtn {
+  background: #FF416C;
+  color: #fff;
+  width: 100%;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 8px 0;
+  border: none;
+  font-size: 1.1rem;
+  align-self: center;
+  text-decoration: none;
+  text-align: center;
+}
+
+.shareBtn {
+  background: none;
+  color: #FF416C;
+  width: 100%;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 8px 0;
+  border: 1px solid #FF416C;
+  font-size: 1.1rem;
+  margin-top: 16px;
+  align-self: center;
+  text-decoration: none;
+  text-align: center;
+}
+
+.tabBar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #eee;
+}
+.tab, .activeTab {
+  background: none;
+  border: none;
+  padding: 12px 24px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #888;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s;
+}
+.activeTab {
+  color: #FF416C;
+  border-bottom: 3px solid #FF416C;
+  background: #f8f8f8;
+}
+
+.timeline {
+  position: relative;
+  margin: 32px 0;
+  padding-left: 80px;
+  border-left: 2px solid #e5e5e5;
+}
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  position: relative;
+}
+.timeline-date {
+  position: absolute;
+  left: -80px;
+  width: 60px;
+  text-align: right;
+  top: 0;
+}
+.timeline-day {
+  font-size: 24px;
+  font-weight: bold;
+  color: #242a46;
+}
+.timeline-month {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #888;
+}
+.timeline-year {
+  font-size: 11px;
+  color: #bdbdbd;
+}
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  background: #FF416C;
+  border-radius: 50%;
+  margin: 12px 24px 0 0;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #FF416C;
+}
+.timeline-content {
+  background: none;
+  padding: 0;
+  max-width: 700px;
+}

@@ -1,0 +1,40 @@
+.completeProfileRoot {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.completeProfileTitle {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.inactiveLabel {
+  color: #93949B;
+  font-weight: 500;
+  text-align: center;
+  min-width: 110px;
+}
+
+.profileForm {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.formHint {
+  font-size: 0.96em;
+  color: #888;
+  margin-top: 6px;
+}
+
+.completeProfileBtn {
+  border-radius: 24px;
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  background-color: #FF416C;
+}

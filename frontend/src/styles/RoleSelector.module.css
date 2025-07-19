@@ -1,0 +1,10 @@
+.roleCard {
+  box-shadow: 0 6px 32px 0 rgba(80,105,220,0.18), 0 1.5px 3px 0 rgba(60,72,120,0.10);
+  border: 1.5px solid #e6e6e6;
+  border-radius: 18px;
+  background: #fcfcfc;
+  transition: box-shadow 0.2s, transform 0.18s, border-color 0.16s;
+  padding: 24px;
+  cursor: pointer;
+  outline: none;
+}

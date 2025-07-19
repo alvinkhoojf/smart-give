@@ -1,0 +1,113 @@
+.donationBox {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+}
+
+.infoCard {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tab {
+  flex: 1;
+  border: none;
+  padding: 10px 20px;
+  background-color: #eee;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+}
+
+.active {
+  background-color: #fff;
+  border-bottom: 2px solid #007bff;
+}
+
+.bg-purple {
+  background-color: #9b59b6;
+  color: #fff;
+}
+
+.donateBtn {
+  background-color: #FF416C;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 24px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.ngo {
+  color: #FF416C;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.raisedAmount {
+  color: #FF416C;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.verified {
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: #FF416C;
+  color: white;
+  gap: 5px;
+  border-radius: 50px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  align-items: center;
+}
+
+.shieldIcon {
+  width: 16px;
+  height: 16px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.blurred {
+  filter: blur(4px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(248, 248, 248, 0.02);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.signInButton {
+  background-color: #585858;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.signInButton:hover {
+  background-color: #FF416C;
+}
